@@ -3,31 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kuala Lumpur</title>
+
+<style>
+
+.button {
+
+    background-color: transparent;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    border-color: black;
+    padding: 15px 32px;
+    text-align: center;
+    align-content: center;
+    border-radius: 20%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 100%;
+
+    
+
+}
+
+.button:hover{
+
+    background-color: dimgray;
+    color: ghostwhite;
+}
+
+.city {
+
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}   
+/* tak tau */
+.timedate {
+
+    text-align: center;
+    text-decoration: goldenrod;
+}
+
+.container {
+
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.card {
+
+    width: 50%;
+    height: 50%;
+    background-image: url(kl-morning.jpg);
+
+}
+
+
+</style> 
 </head>
 
 <body>
-
-    <h2>My first thing</h2>
-
-    <button onclick="myfunction()"> Press </button>
-    <p id = 'hello'></p>
-
-   <button onclick="timefunction()"> Date and Time</button>
-    <p id = 'time'></p>
-
-
-    <script>
     
-       function myfunction(){
-        document.getElementById('hello').innerHTML = 'hello'
-       }
+        
 
+    <h1 class="city" > Kuala Lumpur</h1>
+    
+    <button onclick="timefunction()"; class="button"> Date and Time</button>
+    
+    <p id = 'time' style="font-size: 20px;" class="timedate"></p> 
+   
+    
+    
+    
+</body>
+
+
+ <script>
+    
     function timefunction(){
         document.getElementById('time').innerHTML = Date()
     }
 
-    </script>
+    
 
-</body>
+ </script>
+
 </html>
